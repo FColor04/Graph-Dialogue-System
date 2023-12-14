@@ -1,0 +1,8 @@
+
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements"
+    xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements"
+    editor="UnityEditor.UIElements">
+    <ui:Image
+        style="--unity-image: url(&apos;FiAlertCircle.svg?&amp;guid=56ed954319876ac4c97569e6c1ea49e4&amp;type=3&apos;); width: 100%; height: 100%;" />
+</ui:UXML>
+                            

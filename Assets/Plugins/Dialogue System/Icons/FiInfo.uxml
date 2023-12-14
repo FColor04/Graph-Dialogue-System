@@ -1,0 +1,8 @@
+
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements"
+    xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements"
+    editor="UnityEditor.UIElements">
+    <ui:Image
+        style="--unity-image: url(&apos;FiInfo.svg?&amp;guid=fb6aced1f5060f8408f3c06dd76bd303&amp;type=3&apos;); width: 100%; height: 100%;" />
+</ui:UXML>
+                            

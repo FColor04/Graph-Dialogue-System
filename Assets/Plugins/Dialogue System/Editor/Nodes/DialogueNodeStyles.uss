@@ -1,0 +1,103 @@
+#node-border {
+    background-color: rgba(0, 0, 0, 0.54);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+:hover > #selection-border {
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+}
+
+:selected > #selection-border {
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+}
+
+:hover:selected > #selection-border {
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+}
+
+#selection-border {
+    border-left-color: rgb(0, 147, 255);
+    border-right-color: rgb(0, 147, 255);
+    border-top-color: rgb(0, 147, 255);
+    border-bottom-color: rgb(0, 147, 255);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.node {
+    min-width: 64px;
+    min-height: 32px;
+    max-width: 400px;
+    justify-content: center;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    -unity-font: url('project://database/Assets/Scripts/Dialogue%20System/Editor/OpenSans-VariableFont_wdth,wght.ttf?fileID=12800000&guid=7a30b5891383798498f48a4d7336c02f&type=3#OpenSans-VariableFont_wdth,wght');
+    -unity-font-definition: url('project://database/Assets/Scripts/Dialogue%20System/Editor/OpenSans-VariableFont_wdth,wght%20SDF.asset?fileID=11400000&guid=bc116235443e5644cbc9a5f4e504732b&type=2#OpenSans-VariableFont_wdth,wght SDF');
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.verticalContainer {
+    flex-direction: row;
+}
+
+.verticalContainer Port.port {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.verticalContainer Port.port.output {
+    flex-direction: column-reverse;
+}
+
+Port.port {
+    padding: 0;
+}
+
+#connector {
+    width: 7px;
+    height: 7px;
+}
+
+#output {
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+#title {
+    background-color: rgb(38, 68, 137);
+}
+
+.yellow #title {
+    background-color: rgb(150, 116, 40);
+}
