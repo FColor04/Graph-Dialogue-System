@@ -1,0 +1,22 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Scripts/Dialogue%20System/Editor/Nodes/DialogueNodeStyles.uss?fileID=7433441132597879392&amp;guid=474d362eb3cd18141821684bdc71baac&amp;type=3#DialogueNodeStyles" />
+    <ui:VisualElement name="node-border" style="width: 100%; height: 100%;">
+        <ui:VisualElement name="title" style="background-color: rgba(126, 126, 126, 0.86); padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 4px; align-items: center; justify-content: center;">
+            <ui:Label name="title-label" text="Entry" class="unity-text-element unity-label" />
+            <ui:VisualElement name="title-button-container">
+                <ui:VisualElement name="collapse-button">
+                    <ui:VisualElement name="icon" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="contents">
+            <ui:VisualElement name="divider" class="horizontal" />
+            <ui:VisualElement name="top" style="flex-direction: row; justify-content: center; align-items: center; min-height: 16px;">
+                <ui:VisualElement name="input" style="margin-left: auto; margin-right: auto; min-width: 48px;" />
+                <ui:VisualElement name="divider" class="horizontal" style="flex-grow: 1;" />
+                <ui:VisualElement name="output" style="padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="selection-border" picking-mode="Ignore" />
+</ui:UXML>

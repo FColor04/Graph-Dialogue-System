@@ -1,0 +1,23 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/Scripts/Dialogue%20System/Editor/DialogueTreeEditor.uss?fileID=7433441132597879392&amp;guid=0210fd7b96218b04f9cca31bd1681449&amp;type=3#DialogueTreeEditor" />
+    <uie:Toolbar name="Assets" />
+    <SplitView fixed-pane-index="1" fixed-pane-initial-dimension="320">
+        <DialogueTreeViewer focusable="true" style="flex-grow: 1;" />
+        <ui:VisualElement name="RightPanel" style="flex-grow: 1;">
+            <uie:Toolbar name="Toolbar">
+                <uie:ToolbarButton parse-escape-sequences="true" display-tooltip-when-elided="true" name="InspectorButton" style="flex-direction: row; align-items: center;">
+                    <ui:Image style="--unity-image: url(&apos;project://database/Assets/Scripts/Dialogue%20System/Icons/FiInfo.svg?fileID=7388822144124034973&amp;guid=fb6aced1f5060f8408f3c06dd76bd303&amp;type=3#FiInfo&apos;);" />
+                    <ui:Label text="Inspector" />
+                </uie:ToolbarButton>
+                <uie:ToolbarButton parse-escape-sequences="true" display-tooltip-when-elided="true" name="SettingsButton" style="flex-direction: row; align-items: center;">
+                    <ui:Image style="--unity-image: url(&apos;project://database/Assets/Scripts/Dialogue%20System/Icons/FiSettings.svg?fileID=7388822144124034973&amp;guid=1aa1bf0a3f1baa54a9c9712c7809447c&amp;type=3#FiSettings&apos;);" />
+                    <ui:Label text="Settings" />
+                </uie:ToolbarButton>
+            </uie:Toolbar>
+            <Dialogue_System.Editor.SinglePanelView>
+                <Dialogue_System.Editor.NodeInspector />
+                <Dialogue_System.Editor.DialogueSystemSettingsInspector />
+            </Dialogue_System.Editor.SinglePanelView>
+        </ui:VisualElement>
+    </SplitView>
+</ui:UXML>

@@ -1,0 +1,22 @@
+GridBackground {
+    --grid-background-color: rgb(40, 40, 40);
+    --line-color: rgba(193, 196, 192, 0.1);
+    --thick-line-color: rgba(193, 196, 192, 0.1);
+    --spacing: 50;
+}
+
+.unity-toolbar > * {
+    flex-grow: 1;
+    padding-top: 4px;
+    padding-right: 4px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+}
+
+.unity-toolbar {
+    height: 24px;
+}
+
+ToolbarButton.active {
+    background-color: rgba(193, 196, 192, 0.1);
+}

@@ -1,0 +1,25 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Scripts/Dialogue%20System/Editor/Nodes/DialogueNodeStyles.uss?fileID=7433441132597879392&amp;guid=474d362eb3cd18141821684bdc71baac&amp;type=3#DialogueNodeStyles" />
+    <ui:VisualElement name="node-border" picking-mode="Ignore" style="width: 100%; height: 100%;">
+        <ui:VisualElement name="title" style="padding-top: 4px; padding-right: 16px; padding-bottom: 4px; padding-left: 16px; align-items: center; justify-content: center;">
+            <ui:VisualElement name="input" class="verticalContainer" style="margin-left: auto; margin-right: auto; flex-direction: column; align-items: center; justify-content: center;" />
+            <ui:Image name="Avatar" style="flex-grow: 1; position: absolute; top: 0; left: 4px; bottom: 0; height: 100%; width: 64px; --unity-image-size: scale-to-fit;" />
+            <ui:Label name="title-label" text="Entry" class="unity-text-element unity-label" />
+            <ui:VisualElement name="title-button-container">
+                <ui:VisualElement name="collapse-button">
+                    <ui:VisualElement name="icon" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="contents" picking-mode="Ignore">
+            <ui:VisualElement name="divider" class="horizontal" />
+            <ui:VisualElement name="top" picking-mode="Ignore" style="justify-content: center; align-items: center; padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px;">
+                <ui:VisualElement name="VisualElement" style="flex-grow: 1; min-height: 16px; margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px; padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px; max-width: 360px; height: 100%;">
+                    <ui:Label tabindex="-1" text="Dialogue..." parse-escape-sequences="true" display-tooltip-when-elided="true" name="Preview" style="-unity-font-style: italic; white-space: normal; font-size: 16px; text-overflow: ellipsis; padding-right: 4px; padding-left: 4px; padding-top: 4px; padding-bottom: 4px; min-height: 16px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="output" picking-mode="Ignore" class="verticalContainer" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="selection-border" picking-mode="Ignore" />
+</ui:UXML>
